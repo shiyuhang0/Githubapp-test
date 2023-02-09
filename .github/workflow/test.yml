@@ -5,7 +5,6 @@ on:
   check_run:
     types: [completed]
 
-
 jobs:
   test:
     runs-on: ubuntu-latest
