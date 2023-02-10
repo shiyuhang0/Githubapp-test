@@ -1,8 +1,8 @@
 name: test
 
 on:
-  pull_request:
-    branches: [ master ]
+  repository_dispatch:
+    types: [tidbcloud-branch]
 
 jobs:
   test:
@@ -10,4 +10,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: fmt
+        run: echo github.event.client_payload.host
+        
   
