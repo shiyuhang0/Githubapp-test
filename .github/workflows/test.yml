@@ -6,9 +6,10 @@ name: test
 #    types: [completed]
 
 on:
-  pull_request:
-    branches:
-      - master
+  workflow_run:
+    workflows: [TiDB Cloud Branch]
+    types:
+      - completed
 
 jobs:
   test:
