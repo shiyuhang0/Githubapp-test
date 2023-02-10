@@ -10,4 +10,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+  test2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2        
+        
   
