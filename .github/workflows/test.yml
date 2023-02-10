@@ -10,7 +10,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: fmt
-        run: echo $github.event.client_payload.host
+      - env:
+          MESSAGE: ${{ github.event.client_payload.host }}
+        run: echo $MESSAGE
         
   
