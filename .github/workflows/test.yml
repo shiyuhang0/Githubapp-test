@@ -1,6 +1,5 @@
 name: test
 
-
 on:
   repository_dispatch:
     types: [tidbcloud-branch]
