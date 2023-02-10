@@ -5,9 +5,17 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  wait:
+    name: wait
     runs-on: ubuntu-latest
     steps:
+      - name: Wait for tests to succeed
+        uses: lewagon/wait-on-check-action@v1.2.0
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          check-name: 'TiDB Cloud Branch'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-interval: 10
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2    
   
