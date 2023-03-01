@@ -1,4 +1,4 @@
-github:
+githubs:
   branch:
     blackList:
       - "*_doc"
