@@ -1,4 +1,5 @@
 github:
   branch:
-    autoDestroy: false
-    a: 1
+    blackList:
+      - ".*_doc"
+      - ".*_blackList"
