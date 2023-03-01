@@ -3,9 +3,4 @@ github:
     blackList:
       - ".*_doc"
       - ".*_blackList"
-    whiteList:
-      - ".*_db"
-      - ".*_tidb"
-      - ".*syh"
     autoDestroy: false
-    autoReserve: true
