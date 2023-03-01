@@ -2,4 +2,4 @@ github:
   branch:
     blackList:
       - ".*_doc"
-      - ".*_blackLists"
+      - ".*_blackLists1"
