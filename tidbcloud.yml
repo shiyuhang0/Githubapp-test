@@ -7,5 +7,5 @@ github:
       - ".*_db"
       - ".*_tidb"
       - ".*syh"
-    autoDestroy: falses
-    autoReserved: trues
+    autoDestroy: false
+    autoReserve: true
