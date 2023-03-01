@@ -1,5 +1,5 @@
 github:
   branch:
     blackList:
-      - ".*_doc"
+      - "*_doc"
       - ".*_blackLists1"
