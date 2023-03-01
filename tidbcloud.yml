@@ -1,0 +1,10 @@
+github:
+  branch:
+    blackList:
+      - "*_doc"
+      - "*_blackList"
+    whiteList:
+      - "*_db"
+      - "*_tidb"
+    autoDestroy: true
+    autoReserved: false
