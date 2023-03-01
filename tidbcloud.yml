@@ -1,6 +1,3 @@
 github:
   branch:
-    blackList:
-      - ".*_doc"
-      - ".*_blackList"
     autoDestroy: false
