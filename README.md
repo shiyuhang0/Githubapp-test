@@ -2,3 +2,7 @@
 s
 a
 a
+a
+as
+a
+w
